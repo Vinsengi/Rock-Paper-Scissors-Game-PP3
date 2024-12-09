@@ -76,8 +76,13 @@ scissors = """
 # PLAYING THE GAME STARTS HERE:
 
 print("------------------------------------------------")
-print(f"Hello, Welcome to the ROCK, PAPER, SCISSORS Game!\nThis Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and I wish you both all the best!\nHere we go...1, 2, 3,...Ready? Go...\n")
+print(f"Hello, and Welcome to the ROCK, PAPER, SCISSORS Game!\nThis Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and I wish you both all the best!\nHere we go...1, 2, 3,...Ready? Go...\n")
 print(f"Here is the reminder about the Abbreviations:\n R stands for Rock \n P stands for Paper and\n S stands for Scissors")
+print()
+print(f"Rules of the Game: ")
+print(f"Players deliver hand signals representing rock, paper, or scissors, with the outcome determined by these three rules: ")
+print(f" 1. Rock wins against scissors.\n 2. Scissors win against paper.\n 3. Paper wins against rock.") # from  https://wrpsa.com/the-official-rules-of-rock-paper-scissors/
+
 print("------------------------------------------------")
 
 POSSIBLE_CHOICES = ('R', 'P', 'S')
@@ -104,7 +109,7 @@ rounds_count = 0
 
 while True:
     rounds_count +=1
-    print(f"OK, Round Number {rounds_count}")
+    print(f"Round Number: {rounds_count}")
     
     #1. Tell the user to chose between R for Rock, or P for Paper or S for Scissors
     #2. Get the user's Input
@@ -163,12 +168,12 @@ while True:
         print(f"GAME OVER!! \nThe computer is the overall winner in the last {rounds_count} combined rounds with {computer_score} won rounds! Better luck next time! 😢") 
         break
     #9. ask the user if they want to continue playing    
-    wanna_try_again = input("Do you wanna try again ? Type y or n : ").upper()
+    wanna_try_again = input("Do you wanna try again ? Type any thing but n to continue or n to end the game: ").upper()
     if wanna_try_again == 'N':
         print("OK, No worries, Tschüss for now, was nice playing with you 👋 Please come back at any time!")
         break
 print("------------------------------------------------")
-print(f"Final Results of won rounds\nYou won: {user_score} out of {rounds_count} rounds  and \n Computer: {computer_score} out of {rounds_count}rounds")
+print(f"Final Results: \nYou won: {user_score} out of {rounds_count} rounds  and \nComputer won: {computer_score} out of {rounds_count} rounds")
 
 
 
