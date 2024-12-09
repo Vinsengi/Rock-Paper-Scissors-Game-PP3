@@ -83,6 +83,8 @@ print(f"Rules of the Game: ")
 print(f"Players deliver hand signals representing rock, paper, or scissors, with the outcome determined by these three rules: ")
 print(f" 1. Rock wins against scissors.\n 2. Scissors win against paper.\n 3. Paper wins against rock.") # from  https://wrpsa.com/the-official-rules-of-rock-paper-scissors/
 
+print("THE FIRST TO WIN 7 ROUNDS, WINNS!!")
+
 print("------------------------------------------------")
 
 POSSIBLE_CHOICES = ('R', 'P', 'S')
