@@ -1,3 +1,21 @@
+
+
+### Credits
+The followig sources have inspired some though on how to think about this project and some portions of their code might have been used:
+
+1. I have used the RPS_ASCII_Art code https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe for the image kind of art for the rock paper and scissors.
+
+
+2. Code Institute especially the love sandwiches project walkthrough
+3. Angela Yu, (Course: [Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!](https://www.udemy.com/course/100-days-of-code/?couponCode=24T3MT120924))
+4. Mosh Hamadani (youtunbe: [Python Projects for Beginners – Master Problem-Solving!](https://www.youtube.com/watch?v=yVl_G-F7m8c) )
+5. My Mentor (https://www.linkedin.com/in/jubrillionaire/)
+6. World of Rock Paper Scissors (RPS) website: https://wrpsa.com/
+
+
+<!--
+Code Institute's Read Me file:
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 Welcome,
@@ -30,3 +48,4 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 ---
 
 Happy coding!
+--->

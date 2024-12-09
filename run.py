@@ -1,7 +1,32 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-print(f"Hello, Welcome to the Rock, Paper, Scissors Game!\nThis Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and wish you both all the best!\nHere we go...")
+rock_ASCII_art = """
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+"""
+paper_ASCII_art = """
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+"""
+Scissors_ASCII_art = """
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+"""
+print("------------------------------------------------")
+print(f"Hello, Welcome to the ROCK, PAPER, SCISSORS Game!\nThis Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and wish you both all the best!\nHere we go...")
 
 #Game Procedures:
 
@@ -18,5 +43,6 @@ print(f"Hello, Welcome to the Rock, Paper, Scissors Game!\nThis Game is between 
 #11. After thrre rounds, declare the ultimate winner (who won twice in the 3 rounds)
 
 #1. Tell the user to chose between R for Rock, or P for Paper or S for Scissors
-user_choice = input("One, two, three...go. Type make your choice. Type R for Rock or P for Paper or S for Scissors....\n").upper()
-print(f"You chose {user_choice}")
+#One, two, three...go. Please make your choice:  Type R for Rock or P for Paper or S for Scissors....\n"
+user_choice = input("Enter your choice \n").upper()
+print(f"You chose {user_choice} {rock_ASCII_art}")
