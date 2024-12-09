@@ -154,12 +154,12 @@ while True:
     
     
     # Check if either player has won two out of three rounds 
-    if user_score == 3: 
+    if user_score == 7: 
         print("------------------------------------------------")
         print("------------------------------------------------")
         print(f"GAME OVER!!!...\nCongratulations! You are the overall winner! with {user_score} won rounds! 🎉🎉🎉") 
         break 
-    elif computer_score == 3: 
+    elif computer_score == 7: 
         print(f"GAME OVER!! \nThe computer is the overall winner in the last {rounds_count} combined rounds with {computer_score} won rounds! Better luck next time! 😢") 
         break
     #9. ask the user if they want to continue playing    
@@ -168,7 +168,7 @@ while True:
         print("OK, No worries, Tschüss for now, was nice playing with you 👋 Please come back at any time!")
         break
 print("------------------------------------------------")
-print(f"Final Scores of won rounds\nYou won: {user_score} out of {rounds_count} rounds  and \n Computer: {computer_score} out of {rounds_count}rounds")
+print(f"Final Results of won rounds\nYou won: {user_score} out of {rounds_count} rounds  and \n Computer: {computer_score} out of {rounds_count}rounds")
 
 
 

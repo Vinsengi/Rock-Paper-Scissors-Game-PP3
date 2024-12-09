@@ -9,7 +9,10 @@ The deployed project live link is [HERE](https://rock-paper-scissors-game-pp3-32
 - Visual Studio Code (VSC)
 - GitHub 
 - Heroku
-
+### Next Improvement Backlog
+- Add an option for two players to play against each other, taking turns to input
+their choices. The program should then determine the winner based on their
+inputs. 
 
 ### Credits
 The followig sources have inspired some though on how to think about this project and some portions of their code might have been borrowed/used:
