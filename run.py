@@ -117,7 +117,7 @@ while True:
             return ("Sorry, you lost this one 😢😢😢")
 
     winner_is = who_is_the_winner()
-    print(f"{winner_is} 🎉🎉🎉")
+    print(f"{winner_is}")
     #9. ask the user if they want to continue playing    
     wanna_try_again = input("Do you wanna try again ? Type y or n : ").upper()
     if wanna_try_again == 'N':
