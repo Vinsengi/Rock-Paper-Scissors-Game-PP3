@@ -1,7 +1,7 @@
 # Your code goes here.
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-print(f"Hello, Welcome to the Rock, Paper, Scissors Game!\nThis Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and wish you both all the best!")
+print(f"Hello, Welcome to the Rock, Paper, Scissors Game!\nThis Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and wish you both all the best!\nHere we go...")
 
 #Game Procedures:
 
@@ -16,3 +16,7 @@ print(f"Hello, Welcome to the Rock, Paper, Scissors Game!\nThis Game is between 
 #9. ask the user if they want to continue playing
 #10. if NOT, terminate the Game, other wise continue
 #11. After thrre rounds, declare the ultimate winner (who won twice in the 3 rounds)
+
+#1. Tell the user to chose between R for Rock, or P for Paper or S for Scissors
+user_choice = input("One, two, three...go. Type make your choice. Type R for Rock or P for Paper or S for Scissors....\n").upper()
+print(f"You chose {user_choice}")
