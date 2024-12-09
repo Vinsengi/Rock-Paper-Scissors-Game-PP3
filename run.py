@@ -75,8 +75,8 @@ scissors = """
 # PLAYING THE GAME STARTS HERE:
 
 print("------------------------------------------------")
-print(f"Hello, Welcome to the ROCK, PAPER, SCISSORS Game!\nThis Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and wish you both all the best!\nHere we go...1, 2, 3,...Ready? Go...\n")
-
+print(f"Hello, Welcome to the ROCK, PAPER, SCISSORS Game!\nThis Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and I wish you both all the best!\nHere we go...1, 2, 3,...Ready? Go...\n")
+print(f"Here is the reminder about the Abbreviations:\n R stands for Rock \n P stands for Paper and\n S stands for Scissors")
 print("------------------------------------------------")
 
 POSSIBLE_CHOICES = ('R', 'P', 'S')
@@ -93,36 +93,37 @@ while True:
         continue
     else:
         if user_choice == 'R':
-            print(f"You chose {user_choice} for the ROCK:{rock}")
+            print(f"You chose {user_choice} for the ROCK 🪨:{rock}")
         elif user_choice == 'P':
-            print(f"You chose {user_choice} for the PAPER:{paper}")
+            print(f"You chose {user_choice} for the PAPER 📄:{paper}")
         elif user_choice == 'S':
-            print(f"You chose {user_choice} for the SCISSORS:{scissors}")
+            print(f"You chose {user_choice} for the SCISSORS ✂️:{scissors}")
 
     #5. COMPUTER'S CHOICES
     computer_choice = random.choice(POSSIBLE_CHOICES)
-    print(f"Your Opponent, the computer, chose {computer_choice} for {RPS_ASCII_Art[computer_choice]}")    
+    print(f"Your Opponent, the computer, chose {computer_choice} {RPS_ASCII_Art[computer_choice]}")    
 
     #6. compare the choice of the user and of the computer and
     #8. Determine the winner for the played round by comparring the choices according the Games Rules
-    #def who_is_the_winner(user_choice, computer_choice):
-    if user_choice == computer_choice:
-        print("It's a DRAW 😂 Let's do it again ")
-    elif (
-        (user_choice == 'R' and computer_choice == 'S') or
-        (user_choice == 'S' and computer_choice == 'P') or
-        (user_choice == 'P' and computer_choice == 'R')):
-        print("You won 🎉🎉🎉")
-    else:
-        print("Sorry, you lost this one 😢")
+    def who_is_the_winner():
+        if user_choice == computer_choice:
+            return ("It's a DRAW 😂😂😂 Let's do it again ")
+        elif (
+            (user_choice == 'R' and computer_choice == 'S') or
+            (user_choice == 'S' and computer_choice == 'P') or
+            (user_choice == 'P' and computer_choice == 'R')):
+            return ("You won 🎉🎉🎉💃🕺")
+        else:
+            return ("Sorry, you lost this one 😢😢😢")
 
+    winner_is = who_is_the_winner()
+    print(f"{winner_is} 🎉🎉🎉")
     #9. ask the user if they want to continue playing    
-    wanna_try_again = input("Do you wanna try again? Type y or n : ").upper()
+    wanna_try_again = input("Do you wanna try again ? Type y or n : ").upper()
     if wanna_try_again == 'N':
         print("OK, No worries, Tschüss for now, was nice playing with you 👋 Please come back at any time!")
         break
-#winner_is = who_is_the_winner()
-#print(f"And the WINNER IS {winner_is} 🎉🎉🎉✂️")
+
 
 
 
