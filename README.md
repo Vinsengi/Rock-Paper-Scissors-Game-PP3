@@ -1,7 +1,7 @@
 # ROCK, PAPER, SCISSORS GAME - PP3
 ![Am I responsive Image of the Application](image.png)
 
-The deployed project live link is [HERE](https://corri-construction-8c4725a33281.herokuapp.com/) - ***Use Ctrl (Cmd) and click to open in a new window.*** 
+The deployed project live link is [HERE](https://rock-paper-scissors-game-pp3-322472c99019.herokuapp.com/) - ***Use Ctrl (Cmd) and click to open in a new window.*** 
 
 ### Resources
 
