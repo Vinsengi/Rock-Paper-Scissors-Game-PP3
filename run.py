@@ -75,38 +75,42 @@ print("------------------------------------------------")
 #1. Tell the user to chose between R for Rock, or P for Paper or S for Scissors
 #One, two, three...go. Please make your choice:  Type R for Rock or P for Paper or S for Scissors....\n"
 POSSIBLE_CHOICES = ('R', 'P', 'S')
-user_choice = input("Enter your choice. Type R or P or S: ").upper()
 
-#while True
-if user_choice not in POSSIBLE_CHOICES:
-    print(f"Please follow the instructions correctly. Possible choices are {POSSIBLE_CHOICES}")
-else:
-    if user_choice == 'R':
-        print(f"You chose {user_choice} for the ROCK:{rock}")
-    elif user_choice == 'P':
-        print(f"You chose {user_choice} for the PAPER:{paper}")
-    elif user_choice == 'S':
-        print(f"You chose {user_choice} for the SCISSORS:{scissors}")
+while True:
+    user_choice = input("Enter your choice. Type R or P or S: ").upper()
 
-#COMPUTER'S CHOICES
 
-computer_choice = random.choice(POSSIBLE_CHOICES)
-print(f"Your Opponent, the computer, chose {computer_choice}{RPS_ASCII_Art[computer_choice]}")    
+    if user_choice not in POSSIBLE_CHOICES:
+        print(f"Please follow the instructions correctly. Possible choices are {POSSIBLE_CHOICES}")
+        continue
+    else:
+        if user_choice == 'R':
+            print(f"You chose {user_choice} for the ROCK:{rock}")
+        elif user_choice == 'P':
+            print(f"You chose {user_choice} for the PAPER:{paper}")
+        elif user_choice == 'S':
+            print(f"You chose {user_choice} for the SCISSORS:{scissors}")
 
-#6. compare the choice of the user and of the computer
-#def who_is_the_winner(user_choice, computer_choice):
-if user_choice == computer_choice:
-    print("It's a DRAW 😂 Let's do it again ")
-elif (
-    (user_choice == 'R' and computer_choice == 'S') or
-    (user_choice == 'S' and computer_choice == 'P') or
-    (user_choice == 'P' and computer_choice == 'R')):
-    print("You won 🎉🎉🎉")
-else:
-    print("Sorry, you lost this one 😢")
-wanna_try_again = input("Do you wanna try again? Type y or n : ").upper()
-if wanna_try_again == 'N':
-    break
+    #COMPUTER'S CHOICES
+
+    computer_choice = random.choice(POSSIBLE_CHOICES)
+    print(f"Your Opponent, the computer, chose {computer_choice} for {RPS_ASCII_Art[computer_choice]}")    
+
+    #6. compare the choice of the user and of the computer
+    #def who_is_the_winner(user_choice, computer_choice):
+    if user_choice == computer_choice:
+        print("It's a DRAW 😂 Let's do it again ")
+    elif (
+        (user_choice == 'R' and computer_choice == 'S') or
+        (user_choice == 'S' and computer_choice == 'P') or
+        (user_choice == 'P' and computer_choice == 'R')):
+        print("You won 🎉🎉🎉")
+    else:
+        print("Sorry, you lost this one 😢")
+    wanna_try_again = input("Do you wanna try again? Type y or n : ").upper()
+    if wanna_try_again == 'N':
+        print("OK, No worries, Tschüss, was nice playing with you 👋")
+        break
 #winner_is = who_is_the_winner()
 #print(f"And the WINNER IS {winner_is} 🎉🎉🎉✂️")
 
