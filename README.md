@@ -1,7 +1,7 @@
 
 
 ### Credits
-The followig sources have inspired some though on how to think about this project and some portions of their code might have been used:
+The followig sources have inspired some though on how to think about this project and some portions of their code might have been borrowed/used:
 
 1. I have used the RPS_ASCII_Art code https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe for the image kind of art for the rock paper and scissors.
 

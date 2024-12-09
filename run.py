@@ -1,6 +1,4 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+
 rock_ASCII_art = """
     _______
 ---'   ____)
@@ -9,6 +7,8 @@ rock_ASCII_art = """
       (____)
 ---.__(___)
 """
+# the above valuable value has been borrowed from https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe
+
 paper_ASCII_art = """
      _______
 ---'    ____)____
@@ -17,6 +17,8 @@ paper_ASCII_art = """
          _______)
 ---.__________)
 """
+## the above valuable value has been borrowed from https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe
+
 Scissors_ASCII_art = """
     _______
 ---'   ____)____
@@ -25,6 +27,9 @@ Scissors_ASCII_art = """
       (____)
 ---.__(___)
 """
+# # the above valuable value has been borrowed from https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe
+
+
 print("------------------------------------------------")
 print(f"Hello, Welcome to the ROCK, PAPER, SCISSORS Game!\nThis Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and wish you both all the best!\nHere we go...")
 
