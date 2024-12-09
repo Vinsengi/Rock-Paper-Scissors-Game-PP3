@@ -32,7 +32,7 @@ Scissors_ASCII_art = """
 
 print("------------------------------------------------")
 print(f"Hello, Welcome to the ROCK, PAPER, SCISSORS Game!\nThis Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and wish you both all the best!\nHere we go...")
-
+print("------------------------------------------------")
 #Game Procedures:
 
 #1. Tell the user to chose between R for Rock, or P for Paper or S for Scissors
@@ -49,5 +49,14 @@ print(f"Hello, Welcome to the ROCK, PAPER, SCISSORS Game!\nThis Game is between 
 
 #1. Tell the user to chose between R for Rock, or P for Paper or S for Scissors
 #One, two, three...go. Please make your choice:  Type R for Rock or P for Paper or S for Scissors....\n"
-user_choice = input("Enter your choice \n").upper()
-print(f"You chose {user_choice} {rock_ASCII_art}")
+POSSIBLE_CHOICES = ('R', 'P', 'S')
+user_choice = input("Enter your choice. Type R or P or S: ").upper()
+if user_choice not in POSSIBLE_CHOICES:
+    print(f"Please follow the instructions correctly. Possible choices are {POSSIBLE_CHOICES}")
+else:
+    if user_choice == 'R':
+        print(f"You chose {user_choice} for the ROCK:{rock_ASCII_art}")
+    elif user_choice == 'P':
+        print(f"You chose {user_choice} for the PAPER:{paper_ASCII_art}")
+    elif user_choice == 'S':
+        print(f"You chose {user_choice} for the SCISSORS:{Scissors_ASCII_art}")

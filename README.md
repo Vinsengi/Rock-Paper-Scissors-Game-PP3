@@ -1,3 +1,9 @@
+### Resources
+
+- Gitpod
+- Visual Studio Code (VSC)
+- GitHub 
+- Heroku
 
 
 ### Credits
