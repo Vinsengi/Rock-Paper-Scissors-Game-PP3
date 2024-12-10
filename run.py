@@ -107,6 +107,7 @@ POSSIBLE_CHOICES = ('R', 'P', 'S')
 computer_score = 0
 user_score = 0
 rounds_count = 0
+user_wrong_choice_count = 0
 
 while True:
     rounds_count += 1
@@ -119,9 +120,14 @@ while True:
     # 4. Validate Inputs from the users and print an error if Invalid
     # Invalid choices are different from R, P and S
     if user_choice not in POSSIBLE_CHOICES:
+        user_wrong_choice_count += 1
+        if user_wrong_choice_count == 7:
+            print(f"{result_color}Game Over!! Many Invalid choices")
+            break
         print(f"Please try again. Possible choices are {POSSIBLE_CHOICES}")
         continue
     else:
+        user_wrong_choice_count == 0
         if user_choice == 'R':
             print(f"You chose {user_choice} for the ROCK 🪨:{rock}")
         elif user_choice == 'P':
@@ -181,5 +187,5 @@ while True:
         break
 print("----------------------------------------"*2)
 print(f"{result_color}Final Results:\
-     \nYou won: {user_score} out of {rounds_count} rounds  and\
-      \nComputer won: {computer_score} out of {rounds_count} rounds")
+     \nYou: {user_score} out of {rounds_count} rounds  and\
+      \nComputer: {computer_score} out of {rounds_count} rounds")

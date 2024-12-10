@@ -107,15 +107,15 @@ The Application has been deployed from GitHub to Heroku by following the steps:
 The deployed project live link is [HERE](https://rock-paper-scissors-game-pp3-322472c99019.herokuapp.com/) - ***Use Ctrl (Cmd) and click to open in a new window.*** 
 
 ### Gitpod / Github / 
-* The Project code is reposted on GitHub
+* The Project code is reposted on GitHub [HERE](https://github.com/Vinsengi/Rock-Paper-Scissors-Game-PP3)
 #### Bugs
 ###### Solved Bugs
-During development, i got bugs related to the python syntax, for example, when I was validating the code in the CI Python Linter, errors due to "Too  Long line with length greater than 79"
+During development, i got bugs related to the python syntax, for example, when I was validating the code in the CI Python Linter, errors due to "Too  Long line with length greater than 79 (constraint of 80)"
 I solved those error by breaking those lines into more lines or using \ and \n
 ###### Remaining known Bugs
 * When trying to validate the project with WAVE accessibility tool, I got a contrast error caused by the the RUN PROGRAM button
 ![Contrast error from run program button](image-4.png) ![contrast error](image-5.png). This is out od my project scope as this button is from heroku.
-* The Terminal is so small and not user friendly (This is beyond the scope of my Project at the moment)
+* The Terminal is so small and not user friendly (This is a known constraint and is beyond the scope of my Project at the moment)
 * I tried on my phone and couldn't play the game
 * 
 ## Future Updates
