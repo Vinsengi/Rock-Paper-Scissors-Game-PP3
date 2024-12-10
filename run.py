@@ -6,7 +6,7 @@ background_color = bg("black") + fg("#0000ff")
 text_color = bg("white") + fg("black")
 text_style = attr("bold") 
 result_color = bg("red") 
-congs_color = bg("blue")
+congs_color = bg("cyan")
 comp_congs_color = bg("red")
 cont_color = bg("White")
 print(f"{background_color }{text_style}ROCK-PAPER-SCISSORS-GAME-PP3")
@@ -104,7 +104,7 @@ user_score = 0
 rounds_count = 0
 
 while True:
-    print(f"{text_color}")
+   
     rounds_count += 1
     print()
     print(f"ROUND NUMBER: {rounds_count}")
@@ -113,6 +113,7 @@ while True:
     # 2. Get the user's Input
     # 3. Convert the users Input into capital letters (R, P and S)
     user_choice = input("Enter your choice. Type R or P or S: \n").upper()
+    
 
     # 4. Validate Inputs from the users and print an error if Invalid 
     # Invalid choices are different from R, P and S
