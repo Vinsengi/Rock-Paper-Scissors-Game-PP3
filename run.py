@@ -114,7 +114,7 @@ while True:
     # 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
     # 2. Get the user's Input
     # 3. Convert the users Input into capital letters (R, P and S)
-    user_choice = input("Enter your choice. Type R or P or S:--- \n").upper()
+    user_choice = input("Enter your choice. Type R or P or S:--- ").upper()
     
 
     # 4. Validate Inputs from the users and print an error if Invalid 
