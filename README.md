@@ -1,8 +1,6 @@
 # ROCK, PAPER, SCISSORS GAME - PP3
 ![Am I responsive Image of the Application](image-1.png)
 
-# TOC 
-
 ## Rock Paper Scissors Why Should You Play? 
 
 Many people are often in the dark as to what the Rock Paper Scissors game offers its players. This is because they are ignorant of what the game is truly about and what comes with playing the game. Participants who have understood the concept of the game will agree that the game is a really interesting game that offers a lot of excitement. As a participant, you can play the game on a professional level or to catch fun. Either way, the game is opened to everyone. Learning how to play is not as hard as it looks, as long as you have the intention to learn and practice.
