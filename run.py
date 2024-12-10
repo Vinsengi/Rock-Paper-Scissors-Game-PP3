@@ -8,7 +8,7 @@ background_color = bg("black") + fg("#0000ff")
 text_color = bg("white") + fg("black")
 text_style = attr("bold") 
 result_color = bg("red") 
-congs_color = bg("cyan")
+congs_color = bg("yellow")
 comp_congs_color = bg("red")
 cont_color = bg("White")
 print(f"{background_color }{text_style}ROCK-PAPER-SCISSORS-GAME-PP3")
@@ -144,7 +144,7 @@ while True:
             (user_choice == 'R' and computer_choice == 'S') or
             (user_choice == 'S' and computer_choice == 'P') or
             (user_choice == 'P' and computer_choice == 'R')):
-            return "You won this round 🎉🎉🎉💃🕺", "user"
+            return "You won this round 🎉🎉🎉", "user"
            
         else:
             return "Sorry, you lost this one 😢😢😢", "computer"\
@@ -162,7 +162,7 @@ while True:
     if user_score == 7: 
         print("------------------------------------------------")
         print("------------------------------------------------")
-        print(f"(GAME OVER!!!...\nCongratulations! You are the overall winner! with {user_score} won rounds! 🎉🎉🎉") 
+        print(f"{congs_color}GAME OVER!!!...\nCongratulations! You are the overall winner! with {user_score} won rounds! 🎉🎉🎉💃🕺💃🕺👯") 
         break 
     elif computer_score == 7: 
         print(f"{comp_congs_color}GAME OVER!! \nThe computer is the overall winner in the last {rounds_count} combined rounds with {computer_score} won rounds! Better luck next time! 😢") 
