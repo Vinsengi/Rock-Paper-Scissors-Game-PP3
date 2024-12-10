@@ -2,8 +2,7 @@
 ## Testing inputs
 The following tests were carried out to ensure the portal is working correctly
 
-| **Feature**   | **Action**                    | **Expected Result**          | **Actual Result** |
-| ------------- | ----------------------------- | ---------------------------- | ----------------- |
+![testing-excel](image.png)
 
 
 
