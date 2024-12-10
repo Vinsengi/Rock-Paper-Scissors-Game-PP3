@@ -2,7 +2,7 @@
 ![Am I responsive Image of the Application](image-1.png)
 
 The deployed project live link is [HERE](https://rock-paper-scissors-game-pp3-322472c99019.herokuapp.com/) - ***Use Ctrl (Cmd) and click to open in a new window.*** 
-
+* TOC {:toc}
 ## Rock Paper Scissors Why Should You Play? 
 
 Many people are often in the dark as to what the Rock Paper Scissors game offers its players. This is because they are ignorant of what the game is truly about and what comes with playing the game. Participants who have understood the concept of the game will agree that the game is a really interesting game that offers a lot of excitement. As a participant, you can play the game on a professional level or to catch fun. Either way, the game is opened to everyone. Learning how to play is not as hard as it looks, as long as you have the intention to learn and practice.
@@ -17,6 +17,24 @@ All these combined will not only aid your performance but will also improve your
 ###### credit goes to https://wrpsa.com/why-should-you-play-rock-paper-scissors/
 ## Design (Pre Development)
 ![alt text](image-2.png)
+#### 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
+##### 2. Get the user's Input
+##### 3. Convert the users Input into capital letter (R, P and S)
+##### 4. Validate Inputs from the users and print an error if Invalid (Invalid are all choices different from R, P and S)
+##### 5. Computer's choice ( this will be a random choice from the R, P, S)
+##### 6. Compare the choice of the user and of the computer
+##### 7. print the choices
+##### 8. Determine the winner round by comparring the choices according the Games Rules
+##### 9. ask the user if they want to continue playing
+##### 10. if NOT, terminate the Game, other wise continue
+##### 11. Declare the ultimate winner (who won 7 rounds first)
+
+## Development
+
+
+## Features
+
+
 ## Technologies Used
 ### Resources
 
@@ -31,7 +49,10 @@ All these combined will not only aid your performance but will also improve your
 - termcolor==2.5.0
 [random](https://docs.python.org/3/library/random.html) - to generate contrast colors in the python terminal
 
-## Next Improvement Backlog
+## Testing
+Once the portal was operational I set about testing it for errors and to ensure any possible errors that can be made were caught.
+![CI Python Linter](image-3.png)
+## Future Updates
 - Using the game to decide between participants for a specific task. For instance, used between siblings to decide who clears the table or trims the garden. Colleagues can also play the game to decide who pays the bill for lunch.
 
 - Add an option for two players to play against each other, taking turns to input
@@ -39,7 +60,14 @@ their choices. The program should then determine the winner based on their
 inputs. 
 - Creating a multiplayer RPS game to involve more than the regular numbers of participants
 
-## Credits
+## Validations
+
+## Deployment
+### Heroku
+### Gitpod / Github / 
+#### Bugs
+
+## Credits and Aknowledgements
 The followig sources have inspired some though on how to think about this project and some portions of their code might have been borrowed/used:
 
 1. I have used the RPS_ASCII_Art code https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe for the image kind of art for the rock paper and scissors.
