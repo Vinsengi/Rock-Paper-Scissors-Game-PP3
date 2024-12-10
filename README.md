@@ -109,7 +109,8 @@ The deployed project live link is [HERE](https://rock-paper-scissors-game-pp3-32
 * The Project code is reposted on GitHub
 #### Bugs
 ###### Solved Bugs
-
+During development, i got bugs related to the python syntax, for example, when I was validating the code in the CI Python Linter, errors due to "Too  Long line with length greater than 79"
+I solved those error by breaking those lines into more lines or using \ and \n
 ###### Remaining known Bugs
 * When trying to validate the project with WAVE accessibility tool, I got a contrast error caused by the the RUN PROGRAM button
 ![Contrast error from run program button](image-4.png) ![contrast error](image-5.png). This is out od my project scope as this button is from heroku.

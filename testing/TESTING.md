@@ -1,5 +1,5 @@
 # Testing
-## Testing inputs
+## Testing inputs/outputs
 The following tests were carried out to ensure the portal is working correctly
 
 ![testing-excel](image.png)
