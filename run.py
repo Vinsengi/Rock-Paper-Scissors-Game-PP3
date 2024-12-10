@@ -87,7 +87,8 @@ scissors = """
 print("🪨 📄 ✂️ "*7)
 print("-"*50)
 print(f'''Hello, and Welcome to the ROCK, PAPER, SCISSORS Game!\
-    This Game is between YOU and the COMPUTER......Who gonna winn??? Let's start and I wish you both all the best!\
+    This Game is between YOU and the COMPUTER......Who gonna winn???\
+         Let's start and I wish you both all the best!\
         Here we go...1, 2, 3,...Ready? Go...\n''')
 print(f"Here is the reminder about the Abbreviations:\
     \nR stands for Rock \n P stands for Paper and\n S stands for Scissors")
@@ -97,7 +98,7 @@ print(f"Players deliver hand signals representing rock, paper, or scissors,\
      with the outcome determined by these three rules: ")
 print(f" 1. Rock wins against scissors.\n 2. Scissors win against paper.\
         \n3. Paper wins against rock.")
-        # from  https://wrpsa.com/the-official-rules-of-rock-paper-scissors/
+# from  https://wrpsa.com/the-official-rules-of-rock-paper-scissors/
 print()
 print("THE FIRST TO WIN 7 ROUNDS, WINNS!!")
 print("-"*50)
@@ -144,7 +145,7 @@ while True:
             (user_choice == 'R' and computer_choice == 'S') or
                 (user_choice == 'S' and computer_choice == 'P') or
                 (user_choice == 'P' and computer_choice == 'R')):
-            return "You won this round 🎉🎉🎉", "user" 
+            return "You won this round 🎉🎉🎉", "user"
         else:
             return "Sorry, you lost this one 😢😢😢", "computer"\
 
