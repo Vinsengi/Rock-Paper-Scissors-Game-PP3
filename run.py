@@ -168,7 +168,7 @@ while True:
         print(f"{comp_congs_color}GAME OVER!! \nThe computer is the overall winner in the last {rounds_count} combined rounds with {computer_score} won rounds! Better luck next time! 😢") 
         break
     # 9. ask the user if they want to continue playing    
-    wanna_try_again = input("Do you wanna try again ? Type any thing but n to continue or n to end the game: \n").upper()
+    wanna_try_again = input("Do you wanna try again ? Type any thing but n to continue or n to end the game:...").upper()
     if wanna_try_again == 'N':
         print(f"{cont_color}OK, No worries, Tschüss for now, was nice playing with you 👋 Please come back at any time!")
         break
