@@ -86,18 +86,17 @@ scissors = """
 
 print("🪨 📄 ✂️ "*7)
 print("-"*50)
-print(f'''Hello, and Welcome to the ROCK, PAPER, SCISSORS Game!\
-    This Game is between YOU and the COMPUTER......Who gonna winn???\
-         Let's start and I wish you both all the best!\
-        Here we go...1, 2, 3,...Ready? Go...\n''')
+print(f'''Hello, and Welcome to the ROCK, PAPER, SCISSORS Game!\n
+This Game is between YOU and the COMPUTER......Who gonna winn???\n
+Let's start and I wish you both all the best!\n''')
 print(f"Here is the reminder about the Abbreviations:\
-    \nR stands for Rock \n P stands for Paper and\n S stands for Scissors")
+    \nR stands for Rock \nP stands for Paper and\nS stands for Scissors")
 print()
 print(f"Rules of the Game: ")
-print(f"Players deliver hand signals representing rock, paper, or scissors,\
-     with the outcome determined by these three rules: ")
-print(f" 1. Rock wins against scissors.\n 2. Scissors win against paper.\
-        \n3. Paper wins against rock.")
+print(f"Players deliver hand signals representing rock, paper, or scissors")
+print("The outcome determined by these three rules: ")
+print(f"1. Rock wins against scissors.\n2. Scissors win against paper.\
+\n3. Paper wins against rock.")
 # from  https://wrpsa.com/the-official-rules-of-rock-paper-scissors/
 print()
 print("THE FIRST TO WIN 7 ROUNDS, WINNS!!")
@@ -111,8 +110,8 @@ rounds_count = 0
 
 while True:
     rounds_count += 1
-    print()
     print(f"ROUND NUMBER: {rounds_count}")
+    print("Here we go...1, 2, 3,...Ready? Go...\n")
     # 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
     # 2. Get the user's Input
     # 3. Convert the users Input into capital letters (R, P and S)
@@ -132,8 +131,8 @@ while True:
 
     # 5. COMPUTER'S CHOICES
     computer_choice = random.choice(POSSIBLE_CHOICES)
-    print(f"Your Opponent, the computer, \
-        chose {computer_choice} {RPS_ASCII_Art[computer_choice]}")
+    print(f"Your Opponent, the computer,...")
+    print(f"chose: {computer_choice} {RPS_ASCII_Art[computer_choice]}")
 
     # 6. compare the choice of the user and of the computer and
     # 8. Determine the winner, comparring the choices according the Games Rules
@@ -147,7 +146,7 @@ while True:
                 (user_choice == 'P' and computer_choice == 'R')):
             return "You won this round 🎉🎉🎉", "user"
         else:
-            return "Sorry, you lost this one 😢😢😢", "computer"\
+            return "Sorry, you lost this one 😢😢😢", "computer"
 
     winner_is, winner = who_is_the_winner()
     print(f"{winner_is}")
@@ -161,19 +160,21 @@ while True:
     if user_score == 7:
         print("------------------------------------------------")
         print("------------------------------------------------")
-        print(f"{congs_color} GAME OVER!!!...\
-            \nCongratulations! You are the overall winner!\
-             with {user_score} won rounds! 🎉🎉🎉💃🕺💃🕺👯")
+        print(f"{congs_color}GAME OVER!!!...\
+        \nCongratulations! You are the overall winner!\
+    with {user_score} won rounds! 🎉🎉🎉💃🕺💃🕺👯")
         break
     elif computer_score == 7:
         print(f"{comp_congs_color}GAME OVER!!\
         \nThe computer is the overall winner in the last {rounds_count}\
-        combined rounds with {computer_score} won rounds!\
-            Better luck next time! 😢")
+ combined rounds with {computer_score} won rounds!\
+\nBetter luck next time! 😢")
         break
     # 9. ask the user if they want to continue playing
-    wanna_try_again = input("Do you wanna try again ? Type any thing but n \
-        to continue or n to end the game:...").upper()
+    print("Do you wanna try again ?")
+    wanna_try_again = input(
+         "Type any thing but n to continue or n to end the game:..."
+         ).upper()
     if wanna_try_again == 'N':
         print(f"{cont_color}OK, No worries, Tschüss for now, was nice \
             playing with you 👋 Please come back at any time!")
