@@ -86,8 +86,8 @@ def kina_RPS_game():
     print("🪨 📄 ✂️ "*7)
     print("-"*50)
     print(f'''Hello, and Welcome to the ROCK, PAPER, SCISSORS Game!\n
-    This Game is between YOU and the COMPUTER......Who gonna winn???\n
-    Let's start and I wish you both all the best!\n''')
+This Game is between YOU and the COMPUTER......Who gonna winn???\n
+Let's start and I wish you both all the best!\n''')
     print(f"Here is the reminder about the Abbreviations:\
         \nR stands for Rock \nP stands for Paper and\nS stands for Scissors")
     print()
@@ -109,7 +109,9 @@ def kina_RPS_game():
     user_wrong_choice_count = 0
 
     while True:
+        print()
         rounds_count += 1
+        print()
         print(f"ROUND NUMBER: {rounds_count}")
         print("Here we go...1, 2, 3,...Ready? Go...\n")
         # 1. Tell the user to chose R for Rock, P for Paper or S for Scissors
