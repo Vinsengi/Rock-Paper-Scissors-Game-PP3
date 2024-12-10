@@ -3,7 +3,7 @@ import random
 import time
 from colored import fg, bg, attr
 background_color = bg("black") + fg("#0000ff")
-text_color = bg("green") + fg("#ff0000")
+text_color = bg("white") + fg("black")
 text_style = attr("bold") 
 result_color = bg("red") 
 congs_color = bg("blue")
