@@ -84,7 +84,7 @@ I have also tested manually for work as follow:
 * Passed the code through a PEP8 Linter and confirmed there are no errors
 * I have given invalid inputs (numbers, strings different to what's expected etc) and the project is able to catch those errors without craching
 * I have tested my Gitpod local terminal as well as the heroku terminal and all is working as expected
-* An example of the tests done can be found here: [TESTING.md](Rock-Paper-Scissors-Game-PP3/TESTING.md)
+* An example of the tests done can be found here: [TESTING.md](testing/TESTING.md)
 ## Validations Testing
 ![CI Python Linter](image-6.png)
 ## Deployment

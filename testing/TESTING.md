@@ -15,3 +15,5 @@ The portal was tested in the following browsers (based on my own testing and tho
 - iOS
 
 It worked without issues in the above browsers expect on iOS on my Phone.
+
+### [Go back to README](../README.md)
