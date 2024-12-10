@@ -179,7 +179,7 @@ while True:
         print(f"{cont_color}OK, No worries, Tschüss for now, was nice \
             playing with you 👋 Please come back at any time!")
         break
-print("------------------------------------------------"*2)
+print("----------------------------------------"*2)
 print(f"{result_color}Final Results:\
      \nYou won: {user_score} out of {rounds_count} rounds  and\
       \nComputer won: {computer_score} out of {rounds_count} rounds")
