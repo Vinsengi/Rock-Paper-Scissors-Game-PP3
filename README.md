@@ -1,8 +1,8 @@
 # ROCK, PAPER, SCISSORS GAME - PP3
 ![Am I responsive Image of the Application](image-1.png)
 
-The deployed project live link is [HERE](https://rock-paper-scissors-game-pp3-322472c99019.herokuapp.com/) - ***Use Ctrl (Cmd) and click to open in a new window.*** 
-* TOC {:toc}
+# TOC 
+
 ## Rock Paper Scissors Why Should You Play? 
 
 Many people are often in the dark as to what the Rock Paper Scissors game offers its players. This is because they are ignorant of what the game is truly about and what comes with playing the game. Participants who have understood the concept of the game will agree that the game is a really interesting game that offers a lot of excitement. As a participant, you can play the game on a professional level or to catch fun. Either way, the game is opened to everyone. Learning how to play is not as hard as it looks, as long as you have the intention to learn and practice.
@@ -15,7 +15,7 @@ One beautiful thing about the Rock Paper Scissors game is that you can improve y
 
 All these combined will not only aid your performance but will also improve your personal life. Physical exercise will keep you physically fit and improve your muscles. Mental preparation helps you with focus, consciousness, concentration, and control of your mind. All these are the benefits you get to enjoy playing the Rock Paper Scissors game.
 ###### credit goes to https://wrpsa.com/why-should-you-play-rock-paper-scissors/
-## Design (Pre Development)
+## Design (Pre Development) and Development Process
 ![alt text](image-2.png)
 #### 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
 ##### 2. Get the user's Input
@@ -29,10 +29,21 @@ All these combined will not only aid your performance but will also improve your
 ##### 10. if NOT, terminate the Game, other wise continue
 ##### 11. Declare the ultimate winner (who won 7 rounds first)
 
-## Development
+## Features 
+### from developer perspective
+* Input / Output Features
+* User Input validations
+* While Loops
+* Conditionals (if statements)
+* Random 
 
+### from user perspective
+* Round counting
+* Score tracking
+* Instant Feedbacks
+* Visuals
+* User is able to terminate the game prematurely
 
-## Features
 
 
 ## Technologies Used
@@ -51,7 +62,41 @@ All these combined will not only aid your performance but will also improve your
 
 ## Testing
 Once the portal was operational I set about testing it for errors and to ensure any possible errors that can be made were caught.
+I have also tested manually for work as follow:
+* Passed the code through a PEP8 Linter and confirmed there are no errors
+* I have given invalid inputs (numbers, strings different to what's expected etc) and the project is able to catch those errors without craching
+* I have tested my Gitpod local terminal as well as the heroku terminal and all is working as expected
+## Validations Testing
 ![CI Python Linter](image-3.png)
+## Deployment
+### Heroku
+The Application has been deployed from GitHub to Heroku by following the steps:
+
+1. Created and loged in to my account at heroku.com
+2. Created a new app, added a unique app name (Rock-Paper-Scissors-Game-PP3) and then chose the region
+3. Clicked on create app
+4. Go to "Settings"
+5. Under Config Vars, no extra key(s) and Values were added as I have no API used in my project.
+6. Add required buildpacks (further dependencies). For this project, it is set up that Python is on top and Node.js on bottom
+7. Go to "Deploy" and select "GitHub" in "Deployment method"
+8. To connect Heroku app to my Github repository code, I entered the repository name, clicked 'Search' and then 'Connect' when it showed below.
+9.  Chose the branch I want to build my app from (Main in my case)
+10. then I did "Enable Automatic Deploys", which keeps the app up to date with my GitHub repository
+11. Waited for the app to build. Once ready I could see the “App was successfully deployed” message and a 'View' button to take me to the deployed link.
+
+The deployed project live link is [HERE](https://rock-paper-scissors-game-pp3-322472c99019.herokuapp.com/) - ***Use Ctrl (Cmd) and click to open in a new window.*** 
+
+### Gitpod / Github / 
+* The Project code is reposted on GitHub
+#### Bugs
+###### Solved Bugs
+
+###### Remaining known Bugs
+* When trying to validate the project with WAVE accessibility tool, I got a contrast error caused by the the RUN PROGRAM button
+![Contrast error from run program button](image-4.png) ![contrast error](image-5.png). This is out od my project scope as this button is from heroku.
+* The Terminal is so small and not user friendly (This is beyond the scope of my Project at the moment)
+* I tried on my phone and couldn't play the game
+* 
 ## Future Updates
 - Using the game to decide between participants for a specific task. For instance, used between siblings to decide who clears the table or trims the garden. Colleagues can also play the game to decide who pays the bill for lunch.
 
@@ -59,13 +104,6 @@ Once the portal was operational I set about testing it for errors and to ensure 
 their choices. The program should then determine the winner based on their
 inputs. 
 - Creating a multiplayer RPS game to involve more than the regular numbers of participants
-
-## Validations
-
-## Deployment
-### Heroku
-### Gitpod / Github / 
-#### Bugs
 
 ## Credits and Aknowledgements
 The followig sources have inspired some though on how to think about this project and some portions of their code might have been borrowed/used:
