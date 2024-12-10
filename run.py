@@ -2,6 +2,8 @@
 import random
 import time
 from colored import fg, bg, attr
+from termcolor import colored
+
 background_color = bg("black") + fg("#0000ff")
 text_color = bg("white") + fg("black")
 text_style = attr("bold") 
@@ -112,7 +114,7 @@ while True:
     # 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
     # 2. Get the user's Input
     # 3. Convert the users Input into capital letters (R, P and S)
-    user_choice = input("Enter your choice. Type R or P or S: \n").upper()
+    user_choice = input("Enter your choice. Type R or P or S:--- \n").upper()
     
 
     # 4. Validate Inputs from the users and print an error if Invalid 
@@ -160,7 +162,7 @@ while True:
     if user_score == 7: 
         print("------------------------------------------------")
         print("------------------------------------------------")
-        print(f"{congs_color}GAME OVER!!!...\nCongratulations! You are the overall winner! with {user_score} won rounds! 🎉🎉🎉") 
+        print(f"(GAME OVER!!!...\nCongratulations! You are the overall winner! with {user_score} won rounds! 🎉🎉🎉") 
         break 
     elif computer_score == 7: 
         print(f"{comp_congs_color}GAME OVER!! \nThe computer is the overall winner in the last {rounds_count} combined rounds with {computer_score} won rounds! Better luck next time! 😢") 
