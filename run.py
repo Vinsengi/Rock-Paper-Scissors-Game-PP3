@@ -162,7 +162,7 @@ while True:
     if user_score == 7: 
         print("------------------------------------------------")
         print("------------------------------------------------")
-        print(f"{congs_color}GAME OVER!!!...\nCongratulations! You are the overall winner! with {user_score} won rounds! 🎉🎉🎉💃🕺💃🕺👯") 
+        print(f"{congs_color}{text_style}GAME OVER!!!...\nCongratulations! You are the overall winner! with {user_score} won rounds! 🎉🎉🎉💃🕺💃🕺👯") 
         break 
     elif computer_score == 7: 
         print(f"{comp_congs_color}GAME OVER!! \nThe computer is the overall winner in the last {rounds_count} combined rounds with {computer_score} won rounds! Better luck next time! 😢") 
