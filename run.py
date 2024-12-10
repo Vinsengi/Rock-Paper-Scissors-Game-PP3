@@ -169,12 +169,12 @@ Let's start and I wish you both all the best!\n''')
             print("------------------------------------------------")
             print(f"{congs_color}GAME OVER!!!...\
             \nCongratulations! You are the overall winner!\
-        with {user_score} won rounds! 🎉🎉🎉💃🕺💃🕺👯")
+ with {user_score} won rounds! 🎉🎉🎉💃🕺💃🕺👯")
             break
         elif computer_score == 7:
             print(f"{comp_congs_color}GAME OVER!!\
             \nThe computer is the overall winner in the last {rounds_count}\
-    combined rounds with {computer_score} won rounds!\
+ combined rounds with {computer_score} won rounds!\
     \nBetter luck next time! 😢")
             break
         # 9. ask the user if they want to continue playing
