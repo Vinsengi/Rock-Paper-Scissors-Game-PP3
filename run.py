@@ -138,15 +138,15 @@ while True:
     # 8. Determine the winner, comparring the choices according the Games Rules
     def who_is_the_winner():
         if user_choice == computer_choice:
-            return "It's a DRAW 😂😂😂 Let's do it again ", None \
+            return "It's a DRAW 😂😂😂 Let's do it again\n ", None \
 
         elif (
             (user_choice == 'R' and computer_choice == 'S') or
                 (user_choice == 'S' and computer_choice == 'P') or
                 (user_choice == 'P' and computer_choice == 'R')):
-            return "You won this round 🎉🎉🎉", "user"
+            return "You won this round 🎉🎉🎉\n", "user"
         else:
-            return "Sorry, you lost this one 😢😢😢", "computer"
+            return "Sorry, you lost this one 😢😢😢\n", "computer"
 
     winner_is, winner = who_is_the_winner()
     print(f"{winner_is}")
