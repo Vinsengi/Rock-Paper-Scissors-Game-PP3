@@ -1,1 +1,1 @@
-# Your requirements go here
+colored==2.2.4

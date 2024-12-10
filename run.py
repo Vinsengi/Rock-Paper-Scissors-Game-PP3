@@ -110,7 +110,7 @@ while True:
     # 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
     # 2. Get the user's Input
     # 3. Convert the users Input into capital letters (R, P and S)
-    user_choice = input("Enter your choice. Type R or P or S: ").upper()
+    user_choice = input("Enter your choice. Type R or P or S: \n").upper()
 
     # 4. Validate Inputs from the users and print an error if Invalid 
     # Invalid choices are different from R, P and S
@@ -165,7 +165,7 @@ while True:
             the last {rounds_count} combined rounds with {computer_score} won rounds! Better luck next time! 😢") 
         break
     # 9. ask the user if they want to continue playing    
-    wanna_try_again = input("Do you wanna try again ? Type any thing but n to continue or n to end the game: ").upper()
+    wanna_try_again = input("Do you wanna try again ? Type any thing but n to continue or n to end the game: \n").upper()
     if wanna_try_again == 'N':
         print("OK, No worries, Tschüss for now, was nice playing with you 👋 Please come back at any time!")
         break
