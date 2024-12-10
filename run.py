@@ -3,6 +3,8 @@ import random
 import time
 from colored import fg, bg, attr
 from termcolor import colored
+
+
 def kina_RPS_game():
     background_color = bg("black") + fg("#0000ff")
     text_color = bg("white") + fg("black")
@@ -25,7 +27,6 @@ def kina_RPS_game():
     # 9. ask the user if they want to continue playing
     # 10. if NOT, terminate the Game, other wise continue
     # 11. Declare the ultimate winner (who won 7 rounds first)
-
 
     # GLOBAL VALUABLES
 
@@ -51,7 +52,6 @@ def kina_RPS_game():
         (____)
     ---.__(___)
     """}
-
 
     rock = """
         _______
@@ -81,7 +81,6 @@ def kina_RPS_game():
     """
     # from https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe
 
-
     # PLAYING THE GAME STARTS HERE:
 
     print("🪨 📄 ✂️ "*7)
@@ -93,7 +92,7 @@ def kina_RPS_game():
         \nR stands for Rock \nP stands for Paper and\nS stands for Scissors")
     print()
     print(f"Rules of the Game: ")
-    print(f"Players deliver hand signals representing rock, paper, or scissors")
+    print(f"Player deliver hand signals representing rock, paper, or scissors")
     print("The outcome determined by these three rules: ")
     print(f"1. Rock wins against scissors.\n2. Scissors win against paper.\
     \n3. Paper wins against rock.")
@@ -113,7 +112,7 @@ def kina_RPS_game():
         rounds_count += 1
         print(f"ROUND NUMBER: {rounds_count}")
         print("Here we go...1, 2, 3,...Ready? Go...\n")
-        # 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
+        # 1. Tell the user to chose R for Rock, P for Paper or S for Scissors
         # 2. Get the user's Input
         # 3. Convert the users Input into capital letters (R, P and S)
         user_choice = input("Enter your choice. Type R or P or S:--- ").upper()
@@ -133,7 +132,7 @@ def kina_RPS_game():
             elif user_choice == 'P':
                 print(f"You chose {user_choice} for the PAPER 📄:{paper}")
             elif user_choice == 'S':
-                print(f"You chose {user_choice} for the SCISSORS ✂️:{scissors}")
+                print(f"You chose {user_choice} for SCISSORS ✂️:{scissors}")
 
         # 5. COMPUTER'S CHOICES
         computer_choice = random.choice(POSSIBLE_CHOICES)
@@ -141,7 +140,7 @@ def kina_RPS_game():
         print(f"chose: {computer_choice} {RPS_ASCII_Art[computer_choice]}")
 
         # 6. compare the choice of the user and of the computer and
-        # 8. Determine the winner, comparring the choices according the Games Rules
+        # 8. Determine the winner, comparring the choices to the Games Rules
         def who_is_the_winner():
             if user_choice == computer_choice:
                 return "It's a DRAW 😂😂😂 Let's do it again\n ", None \
@@ -190,4 +189,6 @@ def kina_RPS_game():
         \nYou: {user_score} out of {rounds_count} rounds  and\
         \nComputer: {computer_score} out of {rounds_count} rounds")
 # call function
+
+
 kina_RPS_game()
