@@ -1,20 +1,45 @@
 # ROCK, PAPER, SCISSORS GAME - PP3
-![Am I responsive Image of the Application](image.png)
+![Am I responsive Image of the Application](image-1.png)
 
 The deployed project live link is [HERE](https://rock-paper-scissors-game-pp3-322472c99019.herokuapp.com/) - ***Use Ctrl (Cmd) and click to open in a new window.*** 
 
+## Rock Paper Scissors Why Should You Play? 
+
+Many people are often in the dark as to what the Rock Paper Scissors game offers its players. This is because they are ignorant of what the game is truly about and what comes with playing the game. Participants who have understood the concept of the game will agree that the game is a really interesting game that offers a lot of excitement. As a participant, you can play the game on a professional level or to catch fun. Either way, the game is opened to everyone. Learning how to play is not as hard as it looks, as long as you have the intention to learn and practice.
+
+The truth is that you will find out that the game can be personalized. For instance, consider the individual benefits available in the process of learning and practicing, the skills and experience to be gained, and, most importantly, the level of professionalism to be attained. Additionally, the game can be played to drive a personal interest or purpose (for fun), which is one way the game offers flexibility.
+###### credit goes to https://wrpsa.com/why-should-you-play-rock-paper-scissors/
+
+## The Mind And Physical Exercise 
+One beautiful thing about the Rock Paper Scissors game is that you can improve your wellbeing and lifestyle by merely playing the game, either informally or on a professional level. The game requires physical exertions such as extending hand gestures and standing (with little body movements) for a couple of minutes. Not only that, the mind is not left out in the equation. The game involves that you are mentally active. Some of the mental exertions include mind reading, strategic planning, and mind control.
+
+All these combined will not only aid your performance but will also improve your personal life. Physical exercise will keep you physically fit and improve your muscles. Mental preparation helps you with focus, consciousness, concentration, and control of your mind. All these are the benefits you get to enjoy playing the Rock Paper Scissors game.
+###### credit goes to https://wrpsa.com/why-should-you-play-rock-paper-scissors/
+## Design (Pre Development)
+![alt text](image-2.png)
+## Technologies Used
 ### Resources
 
 - Gitpod
 - Visual Studio Code (VSC)
 - GitHub 
 - Heroku
-### Next Improvement Backlog
+### Libraries
+#### color 
+- colorama==0.4.6
+- colored==2.2.4
+- termcolor==2.5.0
+[random](https://docs.python.org/3/library/random.html) - to generate contrast colors in the python terminal
+
+## Next Improvement Backlog
+- Using the game to decide between participants for a specific task. For instance, used between siblings to decide who clears the table or trims the garden. Colleagues can also play the game to decide who pays the bill for lunch.
+
 - Add an option for two players to play against each other, taking turns to input
 their choices. The program should then determine the winner based on their
 inputs. 
+- Creating a multiplayer RPS game to involve more than the regular numbers of participants
 
-### Credits
+## Credits
 The followig sources have inspired some though on how to think about this project and some portions of their code might have been borrowed/used:
 
 1. I have used the RPS_ASCII_Art code https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe for the image kind of art for the rock paper and scissors.
