@@ -86,7 +86,8 @@ I have also tested manually for work as follow:
 * I have tested my Gitpod local terminal as well as the heroku terminal and all is working as expected
 * An example of the tests done can be found here: [TESTING.md](testing/TESTING.md)
 ## Validations Testing
-![CI Python Linter](image-6.png)
+* PEP8 Python Validator
+* ![CI Python Linter](image-6.png)
 ## Deployment
 ### Heroku
 The Application has been deployed from GitHub to Heroku by following the steps:
