@@ -32,18 +32,36 @@ All these combined will not only aid your performance but will also improve your
 ## Features 
 ### from developer perspective
 * Input / Output Features
-* User Input validations
+    * ![user input feature](image-7.png)
+    * ![Output feature](image-8.png)
+* User Input validations and Error Handling
+    * ![Input validation](image-9.png)
 * While Loops
+    * ![while loop feature](image-10.png)
 * Conditionals (if statements)
+    * ![conditionals](image-11.png)
 * Random 
+    * ![randon feature](image-12.png)
 
 ### from user perspective
-* Round counting
-* Score tracking
-* Instant Feedbacks
+* Rounds count
+    * ![rounds count](image-13.png)
+    * ![rounds count 2](image-14.png)
 * Visuals
-* User is able to terminate the game prematurely
+    * ![visuals for the end user](image-15.png)
+    * ![user visuals](image-16.png)
 
+* Instant Feedbacks
+    * ![instant feedback](image-17.png)
+    * ![feedback to the user](image-18.png)
+
+* User is able to terminate the game prematurely
+    * ![choice to continue or end the game](image-19.png)
+
+* Game terminates automatically also after one wins 7 rounds before the other rounds
+    * ![Games terminates when one player wins 7 rounds before the other](image-20.png)
+* Score tracking
+    * ![score tracking of the results](image-21.png)
 
 
 ## Technologies Used
@@ -67,7 +85,7 @@ I have also tested manually for work as follow:
 * I have given invalid inputs (numbers, strings different to what's expected etc) and the project is able to catch those errors without craching
 * I have tested my Gitpod local terminal as well as the heroku terminal and all is working as expected
 ## Validations Testing
-![CI Python Linter](image-3.png)
+![CI Python Linter](image-6.png)
 ## Deployment
 ### Heroku
 The Application has been deployed from GitHub to Heroku by following the steps:
