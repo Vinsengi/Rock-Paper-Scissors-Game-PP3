@@ -1,3 +1,17 @@
+# GAME DESIGN PROCESSURE:
+
+# 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
+# 2. Get the user's Input
+# 3. Convert the users Input into capital letter (R, P and S)
+# 4. Validate Inputs from the users and print an error
+# 5. Computer's choice ( this will be a random choice from the R, P, S)
+# 6. Compare the choice of the user and of the computer
+# 7. print the choices
+# 8. Determine the winner, comparring the choices according the Games Rules
+# 9. ask the user if they want to continue playing
+# 10. if NOT, terminate the Game, other wise continue
+# 11. Declare the ultimate winner (who won 7 rounds first)
+
 # INTERNAL/EXTERNAL DEPENDENCIES
 import random
 import time
@@ -5,7 +19,9 @@ from colored import fg, bg, attr
 from termcolor import colored
 
 
+# Main function
 def kina_RPS_game():
+    # GLOBAL VALUABLES
     background_color = bg("black") + fg("#0000ff")
     text_color = bg("white") + fg("black")
     text_style = attr("bold")
@@ -13,22 +29,6 @@ def kina_RPS_game():
     congs_color = bg("green") + fg("white")
     comp_congs_color = bg("red")
     cont_color = bg("White")
-    print(f"{background_color }{text_style}ROCK-PAPER-SCISSORS-GAME-PP3")
-    # GAME DESIGN PROCESSURE:
-
-    # 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
-    # 2. Get the user's Input
-    # 3. Convert the users Input into capital letter (R, P and S)
-    # 4. Validate Inputs from the users and print an error
-    # 5. Computer's choice ( this will be a random choice from the R, P, S)
-    # 6. Compare the choice of the user and of the computer
-    # 7. print the choices
-    # 8. Determine the winner, comparring the choices according the Games Rules
-    # 9. ask the user if they want to continue playing
-    # 10. if NOT, terminate the Game, other wise continue
-    # 11. Declare the ultimate winner (who won 7 rounds first)
-
-    # GLOBAL VALUABLES
 
     RPS_ASCII_Art = {'R': """
     _______
@@ -51,7 +51,7 @@ def kina_RPS_game():
        __________)
       (____)
 ---.__(___)
-"""}
+"""}  # constant
 
     rock = """
     _______
@@ -82,7 +82,7 @@ def kina_RPS_game():
     # from https://gist.github.com/wynand1004/b5c521ea8392e9c6bfe101b025c39abe
 
     # PLAYING THE GAME STARTS HERE:
-
+    print(f"{background_color }{text_style}ROCK-PAPER-SCISSORS-GAME-PP3")
     print("🪨 📄 ✂️ "*7)
     print("-"*50)
     print(f'''Hello, and Welcome to the ROCK, PAPER, SCISSORS Game!\n
@@ -114,11 +114,13 @@ Let's start and I wish you both all the best!\n''')
         print()
         print(f"ROUND NUMBER: {rounds_count}")
         print("Here we go...1, 2, 3,...Ready? Go...\n")
-        # 1. Tell the user to chose R for Rock, P for Paper or S for Scissors
+
+        # 1. Tell the user to chose R, P or S
         # 2. Get the user's Input
         # 3. Convert the users Input into capital letters (R, P and S)
         user_choice = input("Enter your choice. Type R or P or S:--- ").upper()
-        # 4. Validate Inputs from the users and print an error if Invalid
+
+        # 4. Validate Inputs
         # Invalid choices are different from R, P and S
         if user_choice not in POSSIBLE_CHOICES:
             user_wrong_choice_count += 1
@@ -141,7 +143,7 @@ Let's start and I wish you both all the best!\n''')
         print(f"Your Opponent, the computer,...")
         print(f"chose: {computer_choice} {RPS_ASCII_Art[computer_choice]}")
 
-        # 6. compare the choice of the user and of the computer and
+        # 6. Compare choices
         # 8. Determine the winner, comparring the choices to the Games Rules
         def who_is_the_winner():
             if user_choice == computer_choice:
@@ -177,7 +179,7 @@ Let's start and I wish you both all the best!\n''')
  combined rounds with {computer_score} won rounds!\
     \nBetter luck next time! 😢")
             break
-        # 9. ask the user if they want to continue playing
+        # 9&10. Ask the user if they want to continue playing or not
         print("Do you wanna try again ?")
         wanna_try_again = input(
             "Type any thing but n to continue or n to end the game:..."
@@ -186,6 +188,7 @@ Let's start and I wish you both all the best!\n''')
             print(f"{cont_color}OK, No worries, Tschüss for now, was nice \
 playing with you 👋 Please come back at any time!")
             break
+    # 11. Final Results
     print("----------------------------------------"*2)
     print(f"{result_color}Final Results:\
         \nYou: {user_score} out of {rounds_count} rounds  and\
