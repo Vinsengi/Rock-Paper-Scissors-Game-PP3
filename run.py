@@ -20,7 +20,7 @@ from termcolor import colored
 
 
 # Main function
-def kina_RPS_game():
+def kina_rps_game():
     # GLOBAL VALUABLES
     background_color = bg("black") + fg("#0000ff")
     text_color = bg("white") + fg("black")
@@ -196,4 +196,4 @@ playing with you 👋 Please come back at any time!")
 
 
 # call function
-kina_RPS_game()
+kina_rps_game()
