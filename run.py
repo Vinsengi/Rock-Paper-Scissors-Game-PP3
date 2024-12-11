@@ -190,7 +190,7 @@ playing with you 👋 Please come back at any time!")
     print(f"{result_color}Final Results:\
         \nYou: {user_score} out of {rounds_count} rounds  and\
         \nComputer: {computer_score} out of {rounds_count} rounds")
+
+
 # call function
-
-
 kina_RPS_game()
