@@ -168,7 +168,7 @@ Let's start and I wish you both all the best!\n''')
             print("------------------------------------------------")
             print("------------------------------------------------")
             print(f"{congs_color}GAME OVER!!!...\
-            \nCongratulations! You are the overall winner!\
+            \nCongratulations! You are the overall winner\
  with {user_score} won rounds! 🎉🎉🎉💃🕺💃🕺👯")
             break
         elif computer_score == 7:
