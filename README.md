@@ -85,7 +85,7 @@ I have also tested manually for work as follow:
 * An example of the tests done can be found here: [TESTING.md](testing/TESTING.md)
 ## Validations Testing
 * PEP8 Python Validator
-* ![CI Python Linter](image-6.png)
+* ![CI Python Linter](image-22.png)
 ## Deployment
 ### Heroku
 The Application has been deployed from GitHub to Heroku by following the steps:
