@@ -1,5 +1,7 @@
 # ROCK, PAPER, SCISSORS GAME - PP3
-![Am I responsive Image of the Application](image-1.png)
+![Am I responsive Image of the Application](../Rock-Paper-Scissors-Game-PP3/images/image-1.png)
+
+[**Click here to see the live page**](https://rock-paper-scissors-game-pp3-322472c99019.herokuapp.com/)
 
 ## Why Should You Play? 
 
@@ -14,7 +16,7 @@ One beautiful thing about the Rock Paper Scissors game is that you can improve y
 All these combined will not only aid your performance but will also improve your personal life. Physical exercise will keep you physically fit and improve your muscles. Mental preparation helps you with focus, consciousness, concentration, and control of your mind. All these are the benefits you get to enjoy playing the Rock Paper Scissors game.
 ###### credit goes to https://wrpsa.com/why-should-you-play-rock-paper-scissors/
 ## Design (Pre Development) and Development Process
-![alt text](image-2.png)
+![alt text](../Rock-Paper-Scissors-Game-PP3/images/image-2.png)
 #### 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
 ##### 2. Get the user's Input
 ##### 3. Convert the users Input into capital letter (R, P and S)
@@ -29,52 +31,83 @@ All these combined will not only aid your performance but will also improve your
 
 ## Features 
 ### from developer perspective
+#### Instruction Section on the main page
+* This contains a welcome message, explanation on how to play the game and the rules of the game
+* ![instruction page](../Rock-Paper-Scissors-Game-PP3/images/instructions.png)
+
 * Input / Output Features
-    * ![user input feature](image-7.png)
-    * ![Output feature](image-8.png)
+    * The user is given opportunity to give or chose a letter (R for rock, P for Paper or S for scissors)
+    * The user is guided into doing that choice through a printed out text
+    * ![user input feature](../Rock-Paper-Scissors-Game-PP3/images/image-7.png)
+    * ![Output feature](../Rock-Paper-Scissors-Game-PP3/images/image-8.png)
+    * ![I/O](../Rock-Paper-Scissors-Game-PP3/images/io.png)
+
 * User Input validations and Error Handling
-    * ![Input validation](image-9.png)
+    * It is possible that the user will give invalid input, meaning (not R, P or S)
+    * Therefore, all user input is checked to see if the user choice is in the tuple called POSSIBLE_CHOICES
+    * if not in that tuple, a grcefull message to try again is displayed to the user and asks the user to try again
+    * ![alt text](../Rock-Paper-Scissors-Game-PP3/images/tryagain.png)
+    * ![Input validation](../Rock-Paper-Scissors-Game-PP3/images/image-9.png)
 * While Loops
-    * ![while loop feature](image-10.png)
+    * This loop makes it possible for the game to keep going until the defined conditions are met
+    * the game will for instance keep going until one of the player gets 7 scores before the other player
+    * the game will end automatically if the user gives in invalid input seven consective times
+    * ![while loop feature](../Rock-Paper-Scissors-Game-PP3/images/image-10.png)
 * Conditionals (if statements)
-    * ![conditionals](image-11.png)
+    * The if satements to check conditions and count the rounds and the invalid inputs
+    * ![conditionals](../Rock-Paper-Scissors-Game-PP3/images/image-11.png)
 * Random 
-    * ![randon feature](image-12.png)
+    * This is for the computer to be able to randomly chose from the tuple of possible choices
+    * ![randon feature](../Rock-Paper-Scissors-Game-PP3/images/image-12.png)
 
 ### from user perspective
 * Rounds count
-    * ![rounds count](image-13.png)
-    * ![rounds count 2](image-14.png)
+    * Shows the user how many rounds tried.
+    * ![rounds count](../Rock-Paper-Scissors-Game-PP3/images/image-13.png)
+    * ![rounds count 2](../Rock-Paper-Scissors-Game-PP3/images/image-14.png)
 * Visuals
-    * ![visuals for the end user](image-15.png)
-    * ![user visuals](image-16.png)
+    * ![visuals for the end user](../Rock-Paper-Scissors-Game-PP3/images/image-15.png)
+    * ![user visuals](../Rock-Paper-Scissors-Game-PP3/images/image-16.png)
 
 * Instant Feedbacks
-    * ![instant feedback](image-17.png)
-    * ![feedback to the user](image-18.png)
+    * The Games gives instant feedback to the user through printed text or through conditions met
+    * ![instant feedback](../Rock-Paper-Scissors-Game-PP3/images/image-17.png)
+    * ![feedback to the user](../Rock-Paper-Scissors-Game-PP3/images/image-18.png)
 
 * User is able to terminate the game prematurely
-    * ![choice to continue or end the game](image-19.png)
+    * ![choice to continue or end the game](../Rock-Paper-Scissors-Game-PP3/images/image-19.png)
 
 * Game terminates automatically also after one wins 7 rounds before the other rounds
-    * ![Games terminates when one player wins 7 rounds before the other](image-20.png)
+    * ![Games terminates when one player wins 7 rounds before the other](../Rock-Paper-Scissors-Game-PP3/images/image-20.png)
 * Score tracking
-    * ![score tracking of the results](image-21.png)
+    * ![score tracking of the results](../Rock-Paper-Scissors-Game-PP3/images/image-21.png)
 
 
-## Technologies Used
+## Tools and Technologies Used
 ### Resources
 
-- Gitpod
+- Gitpod - Code editor
 - Visual Studio Code (VSC)
-- GitHub 
-- Heroku
-### Libraries
+- GitHub  - to store code online
+- Heroku - to deploy the app
+### Libraries Imports
 #### color 
+I have imported the following libraries as i wanted to change colors of my terminal. Please note that all are not used in the code as of now.
 - colorama==0.4.6
 - colored==2.2.4
 - termcolor==2.5.0
+#### Random
+used to randomly select computer choices from the POSSIBLE CHOICES tuple.
 [random](https://docs.python.org/3/library/random.html) - to generate contrast colors in the python terminal
+
+## VERSION CONTROL
+* Git 
+
+    Code has been pushed with git commands to remote repository on Github with commands:
+   * git add . - to add files ready to commit
+   * git commit -m "message" - to commit the code to local 
+    repository ready to be pushed
+  * git push - final command used to push commited code to remote repo on Github
 
 ## Testing
 Once the portal was operational I set about testing it for errors and to ensure any possible errors that can be made were caught.
@@ -83,29 +116,11 @@ I have also tested manually for work as follow:
 * I have given invalid inputs (numbers, strings different to what's expected etc) and the project is able to catch those errors without craching
 * I have tested my Gitpod local terminal as well as the heroku terminal and all is working as expected
 * An example of the tests done can be found here: [TESTING.md](testing/TESTING.md)
+
 ## Validations Testing
 * PEP8 Python Validator
-* ![CI Python Linter](image-22.png)
-## Deployment
-### Heroku
-The Application has been deployed from GitHub to Heroku by following the steps:
+* ![CI Python Linter](../Rock-Paper-Scissors-Game-PP3/images/image-22.png)
 
-1. Created and loged in to my account at heroku.com
-2. Created a new app, added a unique app name (Rock-Paper-Scissors-Game-PP3) and then chose the region
-3. Clicked on create app
-4. Go to "Settings"
-5. Under Config Vars, no extra key(s) and Values were added as I have no API used in my project.
-6. Add required buildpacks (further dependencies). For this project, it is set up that Python is on top and Node.js on bottom
-7. Go to "Deploy" and select "GitHub" in "Deployment method"
-8. To connect Heroku app to my Github repository code, I entered the repository name, clicked 'Search' and then 'Connect' when it showed below.
-9.  Chose the branch I want to build my app from (Main in my case)
-10. then I did "Enable Automatic Deploys", which keeps the app up to date with my GitHub repository
-11. Waited for the app to build. Once ready I could see the “App was successfully deployed” message and a 'View' button to take me to the deployed link.
-
-The deployed project live link is [HERE](https://rock-paper-scissors-game-pp3-322472c99019.herokuapp.com/) - ***Use Ctrl (Cmd) and click to open in a new window.*** 
-
-### Gitpod / Github / 
-* The Project code is reposted on GitHub [HERE](https://github.com/Vinsengi/Rock-Paper-Scissors-Game-PP3)
 #### Bugs
 ###### Solved Bugs
 + During the development, i found that a user could keep entering invalid choices and the loop would indefinately continue. I solved that by keeping track of the invalid choices the user makes and ending the game after the 7th invalid choice
@@ -114,10 +129,34 @@ I solved those error by breaking those lines into more lines or using \ and \n
 
 ###### Remaining known Bugs
 * When trying to validate the project with WAVE accessibility tool, I got a contrast error caused by the the RUN PROGRAM button
-![Contrast error from run program button](image-4.png) ![contrast error](image-5.png). This is out od my project scope as this button is from heroku.
+![Contrast error from run program button](../Rock-Paper-Scissors-Game-PP3/images/image-4.png) ![contrast error](../Rock-Paper-Scissors-Game-PP3/images/image-5.png). This is out of my project scope as this button is from heroku. And this project is mainly not concerned with the UI as is to run in the terminal.
 * The Terminal is so small and not user friendly (This is a known constraint and is beyond the scope of my Project at the moment)
 * I tried on my phone and couldn't play the game
-* 
+
+## Functional Testing
+* ![functional texting excel](./testing/image-1.png)
+
+## Deployment
+### Heroku
+The Application has been deployed from GitHub to Heroku by following the steps:
++ Use: `pip freeze > requirements.txt` to add external libraries to deployed app.
++ Created and loged in to my account at heroku.com
++ Created a new app, added a unique app name (Rock-Paper-Scissors-Game-PP3) and then chose the region
++ Clicked on create app
++ Go to "Settings"
++ Under Config Vars, no extra key(s) and Values were added as I have no API used in my project.
++ Add required buildpacks (further dependencies). For this project, it is set up that Python is on top and Node.js on bottom
++ Go to "Deploy" and select "GitHub" in "Deployment method"
++ To connect Heroku app to my Github repository code, I entered the repository name, clicked 'Search' and then 'Connect' when it showed below.
++  Chose the branch I want to build my app from (Main in my case)
++ then I did "Enable Automatic Deploys", which keeps the app up to date with my GitHub repository
++ Waited for the app to build. Once ready I could see the “App was successfully deployed” message and a 'View' button to take me to the deployed link.
+
+The deployed project live link is [HERE](https://rock-paper-scissors-game-pp3-322472c99019.herokuapp.com/) - ***Use Ctrl (Cmd) and click to open in a new window.*** 
+
+### Gitpod / Github  
+* The Project code is reposted on GitHub [HERE](https://github.com/Vinsengi/Rock-Paper-Scissors-Game-PP3)
+
 ## Future Updates
 - Using the game to decide between participants for a specific task. For instance, used between siblings to decide who clears the table or trims the garden. Colleagues can also play the game to decide who pays the bill for lunch.
 
@@ -125,6 +164,34 @@ I solved those error by breaking those lines into more lines or using \ and \n
 their choices. The program should then determine the winner based on their
 inputs. 
 - Creating a multiplayer RPS game to involve more than the regular numbers of participants
+
+## Cloning the Repository
+
+1. On Github navigate to repository
+2. Click "Code" a green button shown right above the file list
+3. Copy the URL of the repo using HTTPS, SSH OR Github CLI
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory
+6. Type git clone, and then paste the URL you copied earlier
+7. Press enter to create local Clone
+
+For more details on how to clone the remote repo in order to create a local copy for own use, please go to 
+https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+
+## Forking
+1. On Github navigate to repository
+2. click "Fork" located towards the top right corner
+3. Select "owner" for the forked repo, from the dropdown menu under "owner" Under "Owner"
+4. It will create forked repo under the same name as orinial by default but you can type a name in "Repository name" or add a description in "Description" box.
+5. Click "Create fork" !
+
+Forking allows you to make any changes without affecting original project. You can send the suggestions over by submitting pull request. Project owner can review the pull request before accepting the suggestions and merging them.
+
+
+For more details on how to fork the repo, in order to for example suggest any changes to the project you can visit: 
+https://docs.github.com/en/get-started/quickstart/fork-a-repo
+
+When you have fork to a repository you don't have access to files locally on your device, for this you will need to clone the forked repo.
 
 ## Credits and Aknowledgements
 The followig sources have inspired some though on how to think about this project and some portions of their code might have been borrowed/used:
@@ -135,8 +202,9 @@ The followig sources have inspired some though on how to think about this projec
 2. Code Institute especially the love sandwiches project walkthrough
 3. Angela Yu, (Course: [Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!](https://www.udemy.com/course/100-days-of-code/?couponCode=24T3MT120924))
 4. Mosh Hamadani (youtunbe: [Python Projects for Beginners – Master Problem-Solving!](https://www.youtube.com/watch?v=yVl_G-F7m8c) )
-5. My Mentor (https://www.linkedin.com/in/jubrillionaire/)
+5. My Mentor for advices and sample readme templates (https://www.linkedin.com/in/jubrillionaire/)
 6. World of Rock Paper Scissors (RPS) website: https://wrpsa.com/
+7. Daisy Mc Girr for a great peer review and sample readme template (https://www.linkedin.com/in/mcgirr-daisy)
 
 
 <!--
