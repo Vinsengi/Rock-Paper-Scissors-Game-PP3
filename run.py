@@ -184,7 +184,7 @@ Let's start and I wish you both all the best!\n''')
             ).upper()
         if wanna_try_again == 'N':
             print(f"{cont_color}OK, No worries, Tschüss for now, was nice \
-                playing with you 👋 Please come back at any time!")
+playing with you 👋 Please come back at any time!")
             break
     print("----------------------------------------"*2)
     print(f"{result_color}Final Results:\
