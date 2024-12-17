@@ -38,9 +38,9 @@ All these combined will not only aid your performance but will also improve your
 * Input / Output Features
     * The user is given opportunity to give or chose a letter (R for rock, P for Paper or S for scissors)
     * The user is guided into doing that choice through a printed out text
-    * ![user input feature](../Rock-Paper-Scissors-Game-PP3/images/image-7.png)
-    * ![Output feature](../Rock-Paper-Scissors-Game-PP3/images/image-8.png)
-    * ![I/O](../Rock-Paper-Scissors-Game-PP3/images/io.png)
+    * ![user input feature](./images/image-7.png)
+    * ![Output feature](./images/image-8.png)
+    * ![I/O](./images/io.png)
 
 * User Input validations and Error Handling
     * It is possible that the user will give invalid input, meaning (not R, P or S)
