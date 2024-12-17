@@ -58,7 +58,7 @@ All these combined will not only aid your performance but will also improve your
     * ![conditionals](./images/image-11.png)
 * Random 
     * This is for the computer to be able to randomly chose from the tuple of possible choices
-    * ![randon feature](./image-12.png)
+    * ![randon feature](./images/image-12.png)
 
 ### from user perspective
 * Rounds count
