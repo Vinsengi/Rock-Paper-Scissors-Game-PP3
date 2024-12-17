@@ -33,7 +33,7 @@ All these combined will not only aid your performance but will also improve your
 ### from developer perspective
 #### Instruction Section on the main page
 * This contains a welcome message, explanation on how to play the game and the rules of the game
-* ![instruction page](../Rock-Paper-Scissors-Game-PP3/images/instructions.png)
+* ![instruction page](./images/instructions.png)
 
 * Input / Output Features
     * The user is given opportunity to give or chose a letter (R for rock, P for Paper or S for scissors)
