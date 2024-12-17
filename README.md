@@ -46,41 +46,41 @@ All these combined will not only aid your performance but will also improve your
     * It is possible that the user will give invalid input, meaning (not R, P or S)
     * Therefore, all user input is checked to see if the user choice is in the tuple called POSSIBLE_CHOICES
     * if not in that tuple, a grcefull message to try again is displayed to the user and asks the user to try again
-    * ![alt text](../Rock-Paper-Scissors-Game-PP3/images/tryagain.png)
-    * ![Input validation](../Rock-Paper-Scissors-Game-PP3/images/image-9.png)
+    * ![alt text](./images/tryagain.png)
+    * ![Input validation](./images/image-9.png)
 * While Loops
     * This loop makes it possible for the game to keep going until the defined conditions are met
     * the game will for instance keep going until one of the player gets 7 scores before the other player
     * the game will end automatically if the user gives in invalid input seven consective times
-    * ![while loop feature](../Rock-Paper-Scissors-Game-PP3/images/image-10.png)
+    * ![while loop feature](./images/image-10.png)
 * Conditionals (if statements)
     * The if satements to check conditions and count the rounds and the invalid inputs
-    * ![conditionals](../Rock-Paper-Scissors-Game-PP3/images/image-11.png)
+    * ![conditionals](./images/image-11.png)
 * Random 
     * This is for the computer to be able to randomly chose from the tuple of possible choices
-    * ![randon feature](../Rock-Paper-Scissors-Game-PP3/images/image-12.png)
+    * ![randon feature](./image-12.png)
 
 ### from user perspective
 * Rounds count
     * Shows the user how many rounds tried.
-    * ![rounds count](../Rock-Paper-Scissors-Game-PP3/images/image-13.png)
-    * ![rounds count 2](../Rock-Paper-Scissors-Game-PP3/images/image-14.png)
+    * ![rounds count](./images/image-13.png)
+    * ![rounds count 2](./images/image-14.png)
 * Visuals
-    * ![visuals for the end user](../Rock-Paper-Scissors-Game-PP3/images/image-15.png)
-    * ![user visuals](../Rock-Paper-Scissors-Game-PP3/images/image-16.png)
+    * ![visuals for the end user](./images/image-15.png)
+    * ![user visuals](./images/image-16.png)
 
 * Instant Feedbacks
     * The Games gives instant feedback to the user through printed text or through conditions met
-    * ![instant feedback](../Rock-Paper-Scissors-Game-PP3/images/image-17.png)
-    * ![feedback to the user](../Rock-Paper-Scissors-Game-PP3/images/image-18.png)
+    * ![instant feedback](./images/image-17.png)
+    * ![feedback to the user](./images/image-18.png)
 
 * User is able to terminate the game prematurely
-    * ![choice to continue or end the game](../Rock-Paper-Scissors-Game-PP3/images/image-19.png)
+    * ![choice to continue or end the game](./images/image-19.png)
 
 * Game terminates automatically also after one wins 7 rounds before the other rounds
-    * ![Games terminates when one player wins 7 rounds before the other](../Rock-Paper-Scissors-Game-PP3/images/image-20.png)
+    * ![Games terminates when one player wins 7 rounds before the other](./images/image-20.png)
 * Score tracking
-    * ![score tracking of the results](../Rock-Paper-Scissors-Game-PP3/images/image-21.png)
+    * ![score tracking of the results](./images/image-21.png)
 
 
 ## Tools and Technologies Used
@@ -119,7 +119,7 @@ I have also tested manually for work as follow:
 
 ## Validations Testing
 * PEP8 Python Validator
-* ![CI Python Linter](../Rock-Paper-Scissors-Game-PP3/images/image-22.png)
+* ![CI Python Linter](./images/image-22.png)
 
 #### Bugs
 ###### Solved Bugs
@@ -129,7 +129,7 @@ I solved those error by breaking those lines into more lines or using \ and \n
 
 ###### Remaining known Bugs
 * When trying to validate the project with WAVE accessibility tool, I got a contrast error caused by the the RUN PROGRAM button
-![Contrast error from run program button](../Rock-Paper-Scissors-Game-PP3/images/image-4.png) ![contrast error](../Rock-Paper-Scissors-Game-PP3/images/image-5.png). This is out of my project scope as this button is from heroku. And this project is mainly not concerned with the UI as is to run in the terminal.
+![Contrast error from run program button](./images/image-4.png) ![contrast error](./images/image-5.png). This is out of my project scope as this button is from heroku. And this project is mainly not concerned with the UI as is to run in the terminal.
 * The Terminal is so small and not user friendly (This is a known constraint and is beyond the scope of my Project at the moment)
 * I tried on my phone and couldn't play the game
 
