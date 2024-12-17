@@ -121,7 +121,7 @@ I have also tested manually for work as follow:
 * An example of the tests done can be found here: [TESTING.md](testing/TESTING.md)
 
 ## Validations Testing
-* PEP8 Python Validator
+* PEP8 Python Validator of the run.py file
 * ![CI Python Linter](./images/image-22.png)
 
 #### Bugs
