@@ -16,7 +16,10 @@ One beautiful thing about the Rock Paper Scissors game is that you can improve y
 All these combined will not only aid your performance but will also improve your personal life. Physical exercise will keep you physically fit and improve your muscles. Mental preparation helps you with focus, consciousness, concentration, and control of your mind. All these are the benefits you get to enjoy playing the Rock Paper Scissors game.
 ###### credit goes to https://wrpsa.com/why-should-you-play-rock-paper-scissors/
 ## Design (Pre Development) and Development Process
-![Design flow-chart](./images/image-2.png)
+![Design flow-chart](./images/flowchart1.png)
+![flowchart2](./images/flowchart2.png)
+![flowchart3](./images/flowchart3.png)
+![flowchart4](./images/flowchart4.png)
 #### 1. Tell the user to chose R for Rock, or P for Paper or S for Scissors
 ##### 2. Get the user's Input
 ##### 3. Convert the users Input into capital letter (R, P and S)
