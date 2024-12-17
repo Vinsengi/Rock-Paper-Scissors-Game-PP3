@@ -1,5 +1,5 @@
 # ROCK, PAPER, SCISSORS GAME - PP3
-![Am I responsive Image of the Application](../Rock-Paper-Scissors-Game-PP3/images/image-1.png)
+![Am I responsive Image of the Application](./images/image-1.png)
 
 [**Click here to see the live page**](https://rock-paper-scissors-game-pp3-322472c99019.herokuapp.com/)
 
